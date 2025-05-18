@@ -98,7 +98,7 @@ body.dark-mode {
 
 /* Navbar 다크 모드 */
 body.dark-mode .navbar {
-  /* background: #A8B6F1; */
+  /* background: #1e202c; */
   border-bottom: 1px solid #2a2d3a;
 }
 body.dark-mode .navbar .logo,
@@ -475,7 +475,7 @@ body.dark-mode .prediction-tag.중립 { background-color: rgba(var(--text-tertia
   top: 0;
   left: 0;
   right: 0;
-  padding: 5px 0;
+  padding: 15px 0;
   z-index: 1000;
   border-bottom: 1px solid var(--border-color); /* 변수 사용 */
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
@@ -576,7 +576,7 @@ body.dark-mode #theme-toggle:hover {
 }
 
 .left-panel {
-  flex: 2;
+  flex: 2.5;
   /* background: var(--card-bg-color); */
   /* border: 1px solid #00FF9A; */
   /* border-radius: 12px; */
@@ -585,13 +585,13 @@ body.dark-mode #theme-toggle:hover {
   flex-direction: column;
   position: -webkit-sticky;
   position: sticky;
-  top: var(--main-sticky-panel-top);  
+  top: var(--main-sticky-panel-top);
   height: 100%;
   overflow: hidden;
 }
 
 .left-panel h3 {
-  font-size: 1.3em;
+  font-size: 1.1em;
   margin-bottom: 10px;
   color: var(--text-secondary-color);
   flex-shrink: 0;
@@ -602,11 +602,11 @@ body.dark-mode #theme-toggle:hover {
 .coin-list-container {
   flex-grow: 1;
   overflow-y: auto;
-  padding: 12px 20px 20px 20px;
+  padding: 0 20px 20px 20px;
   min-height: 0;
   display: flex;
   flex-direction: column;
-  /* gap: 12px; */
+  gap: 12px;
   scrollbar-width: thin;
   scrollbar-color: rgba(0,0,0,0.2) transparent; /* 라이트모드 스크롤바 */
   border-radius: 5px;
@@ -614,7 +614,7 @@ body.dark-mode #theme-toggle:hover {
 body.dark-mode .coin-list-container {
   scrollbar-color: #444 var(--card-bg-color); /* 다크모드 스크롤바 */
   border: 1px solid #d9dffc;
-  background-color: #1A1929;
+  background-color: #AFBCFC;
 }
 .coin-list-container:hover {
   scrollbar-color: #ccc var(--background-color); /* 호버 시 Firefox 스크롤바 */
@@ -647,7 +647,7 @@ body.dark-mode .coin-list-container:hover::-webkit-scrollbar-thumb:hover {
 }
 
 .coin-item {
-  margin-bottom: 12px; 
+  padding: 12px;
   border-radius: 8px;
   transition: all 0.2s ease;
   /* border: 1px solid var(--border-color); */
@@ -672,8 +672,7 @@ body.dark-mode .coin-item:hover {
 .coin-info-row {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
-  gap: 15px;
+  align-items: center;
   /* margin-bottom: 8px; */
 }
 .coin-symbol-name {
@@ -683,30 +682,29 @@ body.dark-mode .coin-item:hover {
 }
 .coin-item-symbol {
   font-weight: bold;
-  font-size: 1.1em;
+  font-size: 1.05em;
   color: var(--text-color);
   margin-right: 4px;
 }
 .coin-item-name {
-  font-size: 1.2em;
+  font-size: 0.8em;
   color: var(--text-tertiary-color);
 }
 .coin-price {
-  font-size: 1.2em;
+  font-size: 0.95em;
   font-weight: 500;
   color: var(--text-color);
 }
 .coin-change {
-  font-size: 1.0em;
+  font-size: 0.9em;
   font-weight: 500;
   min-width: 60px;
-  /* text-align: right; */
+  text-align: right;
 }
 .daily-weather-row {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  gap: 10px;
   /* margin-top: 10px; */
   /* padding-top: 10px; */
   /* border-top: 1px dashed var(--border-color); */
@@ -726,7 +724,7 @@ body.dark-mode .coin-item:hover {
   font-size: 0.9em;
 }
 .weather-day-icon {
-  font-size: 1.8em;
+  font-size: 1.5em;
 }
 
 .analysis-note {
@@ -771,7 +769,7 @@ body.dark-mode .coin-item:hover {
   position: sticky;
   top: var(--main-sticky-panel-top);
   align-self: flex-start;
-  height:100%;
+  height: var(--main-sticky-panel-height);
   overflow-y: auto;
   background: var(--background-color);
   border-radius: 12px;
@@ -801,12 +799,12 @@ body.dark-mode .coin-item:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   flex-shrink: 0;
 }
 .market-cap-title {
   font-weight: bold;
-  font-size: 1.3em;
+  font-size: 1.1em;
   color: var(--text-secondary-color);
 }
 .market-cap-value-container {
@@ -843,7 +841,7 @@ body.dark-mode .coin-item:hover {
 }
 .fear-greed-title {
   font-weight: bold;
-  font-size: 1.3em;
+  font-size: 1.1em;
   color: var(--text-secondary-color);
   flex-grow: 1;
 }
